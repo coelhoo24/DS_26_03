@@ -55,5 +55,40 @@ namespace Menu_Calculos
             txt_min_n2.Clear();
             txt_min_n1.Focus();
         }
+
+        private void btnSubitrair_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(textBox1.Text);
+            double b = double.Parse(textBox2.Text);
+            sinal.Text = "-";
+            resultado.Text = (a - b).ToString();
+        }
+
+        private void btnMultiplicar_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(textBox1.Text);
+            double b = double.Parse(textBox2.Text);
+            sinal.Text = "x";
+            resultado.Text = (a * b).ToString();
+        }
+
+        private void btnDividir_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(textBox1.Text);
+            double b = double.Parse(textBox2.Text);
+            sinal.Text = "/";
+            resultado.Text = (a / b).ToString();
+        }
+
+        private void btnComparar_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(textBox1.Text);
+            double b = double.Parse(textBox2.Text);
+            sinal.Text = "<>";
+            if (a > b)
+            {
+                resultado.Text = (a > b).ToString();
+            }
+        }
     }
 }
