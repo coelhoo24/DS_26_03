@@ -41,10 +41,20 @@ namespace Menu_Calculos
 
         private void btnSomar_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(textBox1.Text);
-            double b = double.Parse(textBox2.Text);
-            sinal.Text = "+";
-            resultado.Text = (a + b).ToString();
+            double a, b;
+
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                resultado.Text = "Coloque um valor";
+            }
+            else
+            {
+                a = double.Parse(textBox1.Text);
+                b = double.Parse(textBox2.Text);
+
+                sinal.Text = "+";
+                resultado.Text = (a + b).ToString();
+            }
         }
 
         private void btnnLimpar_Click(object sender, EventArgs e)
@@ -58,37 +68,107 @@ namespace Menu_Calculos
 
         private void btnSubitrair_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(textBox1.Text);
-            double b = double.Parse(textBox2.Text);
-            sinal.Text = "-";
-            resultado.Text = (a - b).ToString();
+            double a, b;
+
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                resultado.Text = "Coloque um valor";
+            }
+            else
+            {
+                a = double.Parse(textBox1.Text);
+                b = double.Parse(textBox2.Text);
+
+                sinal.Text = "-";
+                resultado.Text = (a - b).ToString();
+            }
         }
 
         private void btnMultiplicar_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(textBox1.Text);
-            double b = double.Parse(textBox2.Text);
-            sinal.Text = "x";
-            resultado.Text = (a * b).ToString();
+            double a, b;
+
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                resultado.Text = "Coloque um valor";
+            }
+            else
+            {
+                a = double.Parse(textBox1.Text);
+                b = double.Parse(textBox2.Text);
+
+                sinal.Text = "*";
+                resultado.Text = (a * b).ToString();
+            }
         }
 
         private void btnDividir_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(textBox1.Text);
-            double b = double.Parse(textBox2.Text);
-            sinal.Text = "/";
-            resultado.Text = (a / b).ToString();
+            double a, b;
+
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                resultado.Text = "Coloque um valor";
+            }
+            else
+            {
+                a = double.Parse(textBox1.Text);
+                b = double.Parse(textBox2.Text);
+
+                sinal.Text = "/";
+                resultado.Text = (a / b).ToString();
+            }
         }
 
         private void btnComparar_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(textBox1.Text);
-            double b = double.Parse(textBox2.Text);
-            sinal.Text = "<>";
-            if (a > b)
+            double a, b;
+
+            if (textBox1.Text == "" || textBox2.Text == "")
             {
-                resultado.Text = (a > b).ToString();
+                resultado.Text = "Coloque um valor";
             }
+            else
+            {
+                a = double.Parse(textBox1.Text);
+                b = double.Parse(textBox2.Text);
+                if (a > b)
+                {
+                    resultado.Text = a + " > " + b;
+                }
+                else
+                {
+                    resultado.Text = b + " > " + a;
+                }
+            }
+            
+        }
+
+        private void btnParImpar_Click(object sender, EventArgs e)
+        {
+            double a, b;
+            double c;
+
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                resultado.Text = "Coloque um valor";
+            }
+            else
+            {
+                a = int.Parse(textBox1.Text);
+                b = int.Parse(textBox2.Text);
+                c = a + b;
+
+                if (c % 2 == 0)
+                {
+                    resultado.Text = c + " é Par";
+                }
+                else
+                {
+                    resultado.Text = c + " é Impar";
+                }
+            }
+
         }
     }
 }
