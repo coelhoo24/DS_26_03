@@ -53,5 +53,20 @@ namespace Menu_Calculos.Formularios
                 e.Cancel = true;
             }
         }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripStatusLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            staHora.Text = DateTime.Now.ToString();
+        }
     }
 }
