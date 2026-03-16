@@ -34,9 +34,28 @@ namespace Menu_Calculos.Formularios
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm<CALCULOS>(); // ChildForm é o tipo do formulário filho
         }
+        private void OpenChildForm<T>() where T : Form, new()
+        {
+            var existingForm = this.MdiChildren.FirstOrDefault(f => f is T);
 
+            if (existingForm != null)
+            {
+                // Se já existe, traz para frente e ativa
+                existingForm.BringToFront();
+                existingForm.Activate();
+            }
+            else
+            {
+                // Se não existe, cria e exibe
+                var newForm = new T
+                {
+                    MdiParent = this,
+                };
+                newForm.Show();
+            }
+        }
         private void comBotõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
          

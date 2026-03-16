@@ -31,18 +31,18 @@
             this.sinal = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.resultado = new System.Windows.Forms.Label();
-            this.btnSomar = new System.Windows.Forms.Button();
             this.btnnLimpar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.txt_min_n2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.txt_min_n1 = new System.Windows.Forms.TextBox();
-            this.btnSubitrair = new System.Windows.Forms.Button();
-            this.btnMultiplicar = new System.Windows.Forms.Button();
-            this.btnDividir = new System.Windows.Forms.Button();
-            this.btnComparar = new System.Windows.Forms.Button();
             this.btnParImpar = new System.Windows.Forms.Button();
+            this.btnComparar = new System.Windows.Forms.Button();
+            this.btnDividir = new System.Windows.Forms.Button();
+            this.btnMultiplicar = new System.Windows.Forms.Button();
+            this.btnSubitrair = new System.Windows.Forms.Button();
+            this.btnSomar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // sinal
@@ -77,17 +77,6 @@
             this.resultado.TabIndex = 3;
             this.resultado.Text = "?";
             this.resultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnSomar
-            // 
-            this.btnSomar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSomar.Location = new System.Drawing.Point(375, 32);
-            this.btnSomar.Name = "btnSomar";
-            this.btnSomar.Size = new System.Drawing.Size(111, 32);
-            this.btnSomar.TabIndex = 5;
-            this.btnSomar.Text = "&Somar";
-            this.btnSomar.UseVisualStyleBackColor = true;
-            this.btnSomar.Click += new System.EventHandler(this.btnSomar_Click);
             // 
             // btnnLimpar
             // 
@@ -145,38 +134,16 @@
             this.txt_min_n1.TabIndex = 8;
             this.txt_min_n1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // btnSubitrair
+            // btnParImpar
             // 
-            this.btnSubitrair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubitrair.Location = new System.Drawing.Point(375, 73);
-            this.btnSubitrair.Name = "btnSubitrair";
-            this.btnSubitrair.Size = new System.Drawing.Size(111, 32);
-            this.btnSubitrair.TabIndex = 10;
-            this.btnSubitrair.Text = "&Subtrair";
-            this.btnSubitrair.UseVisualStyleBackColor = true;
-            this.btnSubitrair.Click += new System.EventHandler(this.btnSubitrair_Click);
-            // 
-            // btnMultiplicar
-            // 
-            this.btnMultiplicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplicar.Location = new System.Drawing.Point(375, 113);
-            this.btnMultiplicar.Name = "btnMultiplicar";
-            this.btnMultiplicar.Size = new System.Drawing.Size(111, 32);
-            this.btnMultiplicar.TabIndex = 11;
-            this.btnMultiplicar.Text = "&Multiplicar";
-            this.btnMultiplicar.UseVisualStyleBackColor = true;
-            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
-            // 
-            // btnDividir
-            // 
-            this.btnDividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDividir.Location = new System.Drawing.Point(375, 150);
-            this.btnDividir.Name = "btnDividir";
-            this.btnDividir.Size = new System.Drawing.Size(111, 32);
-            this.btnDividir.TabIndex = 12;
-            this.btnDividir.Text = "&Dividir";
-            this.btnDividir.UseVisualStyleBackColor = true;
-            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
+            this.btnParImpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnParImpar.Location = new System.Drawing.Point(375, 290);
+            this.btnParImpar.Name = "btnParImpar";
+            this.btnParImpar.Size = new System.Drawing.Size(111, 32);
+            this.btnParImpar.TabIndex = 14;
+            this.btnParImpar.Text = "&Par e impar";
+            this.btnParImpar.UseVisualStyleBackColor = true;
+            this.btnParImpar.Click += new System.EventHandler(this.btnParImpar_Click);
             // 
             // btnComparar
             // 
@@ -189,16 +156,49 @@
             this.btnComparar.UseVisualStyleBackColor = true;
             this.btnComparar.Click += new System.EventHandler(this.btnComparar_Click);
             // 
-            // btnParImpar
+            // btnDividir
             // 
-            this.btnParImpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnParImpar.Location = new System.Drawing.Point(375, 290);
-            this.btnParImpar.Name = "btnParImpar";
-            this.btnParImpar.Size = new System.Drawing.Size(111, 32);
-            this.btnParImpar.TabIndex = 14;
-            this.btnParImpar.Text = "&Par e impar";
-            this.btnParImpar.UseVisualStyleBackColor = true;
-            this.btnParImpar.Click += new System.EventHandler(this.btnParImpar_Click);
+            this.btnDividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDividir.Location = new System.Drawing.Point(375, 150);
+            this.btnDividir.Name = "btnDividir";
+            this.btnDividir.Size = new System.Drawing.Size(111, 32);
+            this.btnDividir.TabIndex = 12;
+            this.btnDividir.Text = "&Dividir";
+            this.btnDividir.UseVisualStyleBackColor = true;
+            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
+            // 
+            // btnMultiplicar
+            // 
+            this.btnMultiplicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMultiplicar.Location = new System.Drawing.Point(375, 113);
+            this.btnMultiplicar.Name = "btnMultiplicar";
+            this.btnMultiplicar.Size = new System.Drawing.Size(111, 32);
+            this.btnMultiplicar.TabIndex = 11;
+            this.btnMultiplicar.Text = "&Multiplicar";
+            this.btnMultiplicar.UseVisualStyleBackColor = true;
+            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
+            // 
+            // btnSubitrair
+            // 
+            this.btnSubitrair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubitrair.Location = new System.Drawing.Point(375, 73);
+            this.btnSubitrair.Name = "btnSubitrair";
+            this.btnSubitrair.Size = new System.Drawing.Size(111, 32);
+            this.btnSubitrair.TabIndex = 10;
+            this.btnSubitrair.Text = "&Subtrair";
+            this.btnSubitrair.UseVisualStyleBackColor = true;
+            this.btnSubitrair.Click += new System.EventHandler(this.btnSubitrair_Click);
+            // 
+            // btnSomar
+            // 
+            this.btnSomar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSomar.Location = new System.Drawing.Point(375, 32);
+            this.btnSomar.Name = "btnSomar";
+            this.btnSomar.Size = new System.Drawing.Size(111, 32);
+            this.btnSomar.TabIndex = 5;
+            this.btnSomar.Text = "&Somar";
+            this.btnSomar.UseVisualStyleBackColor = true;
+            this.btnSomar.Click += new System.EventHandler(this.btnSomar_Click);
             // 
             // CALCULOS
             // 
@@ -233,18 +233,18 @@
         private System.Windows.Forms.Label sinal;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label resultado;
-        private System.Windows.Forms.Button btnSomar;
         private System.Windows.Forms.Button btnnLimpar;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.TextBox txt_min_n2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox txt_min_n1;
-        private System.Windows.Forms.Button btnSubitrair;
-        private System.Windows.Forms.Button btnMultiplicar;
-        private System.Windows.Forms.Button btnDividir;
-        private System.Windows.Forms.Button btnComparar;
         private System.Windows.Forms.Button btnParImpar;
+        private System.Windows.Forms.Button btnComparar;
+        private System.Windows.Forms.Button btnDividir;
+        private System.Windows.Forms.Button btnMultiplicar;
+        private System.Windows.Forms.Button btnSubitrair;
+        private System.Windows.Forms.Button btnSomar;
     }
 }
 
