@@ -107,5 +107,27 @@ namespace Menu_Calculos.Formularios
         {
             OpenChildForm<CalcRadio>(); // ChildForm é o tipo do formulário filho
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void cascatasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            this.LayoutMdi(MdiLayout.Cascade);
+            
+        }
+
+        private void horizontalmenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void vErticalmenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileVertical);
+        }
     }
 }
