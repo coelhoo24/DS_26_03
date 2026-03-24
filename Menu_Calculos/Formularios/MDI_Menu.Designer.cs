@@ -125,6 +125,7 @@
             this.visorUnicoToolStripMenuItem1.Name = "visorUnicoToolStripMenuItem1";
             this.visorUnicoToolStripMenuItem1.Size = new System.Drawing.Size(274, 34);
             this.visorUnicoToolStripMenuItem1.Text = "Visor unico";
+            this.visorUnicoToolStripMenuItem1.Click += new System.EventHandler(this.visorUnicoToolStripMenuItem1_Click);
             // 
             // novaCalcOneVisioToolStripMenuItem
             // 
@@ -163,21 +164,21 @@
             // cascatasToolStripMenuItem
             // 
             this.cascatasToolStripMenuItem.Name = "cascatasToolStripMenuItem";
-            this.cascatasToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.cascatasToolStripMenuItem.Size = new System.Drawing.Size(246, 34);
             this.cascatasToolStripMenuItem.Text = "Cascatas";
             this.cascatasToolStripMenuItem.Click += new System.EventHandler(this.cascatasToolStripMenuItem_Click);
             // 
             // horizontalmenteToolStripMenuItem
             // 
             this.horizontalmenteToolStripMenuItem.Name = "horizontalmenteToolStripMenuItem";
-            this.horizontalmenteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.horizontalmenteToolStripMenuItem.Size = new System.Drawing.Size(246, 34);
             this.horizontalmenteToolStripMenuItem.Text = "Horizontalmente";
             this.horizontalmenteToolStripMenuItem.Click += new System.EventHandler(this.horizontalmenteToolStripMenuItem_Click);
             // 
             // vErticalmenteToolStripMenuItem
             // 
             this.vErticalmenteToolStripMenuItem.Name = "vErticalmenteToolStripMenuItem";
-            this.vErticalmenteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.vErticalmenteToolStripMenuItem.Size = new System.Drawing.Size(246, 34);
             this.vErticalmenteToolStripMenuItem.Text = "VErticalmente";
             this.vErticalmenteToolStripMenuItem.Click += new System.EventHandler(this.vErticalmenteToolStripMenuItem_Click);
             // 

@@ -129,5 +129,10 @@ namespace Menu_Calculos.Formularios
         {
             this.LayoutMdi(MdiLayout.TileVertical);
         }
+
+        private void visorUnicoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm<Calc_VISOR>();
+        }
     }
 }
