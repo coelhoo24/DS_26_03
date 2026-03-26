@@ -239,7 +239,7 @@
             this.Controls.Add(this.sinal);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CALCULOS";
-            this.Text = "DogMello";
+            this.Text = "calc bt";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -35,8 +35,6 @@
             this.comBotõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comRadioButtonsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visorUnicoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.novaCalcOneVisioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calculadora00ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.janelasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,6 +69,8 @@
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.name = new System.Windows.Forms.ToolStripStatusLabel();
             this.staHora = new System.Windows.Forms.Timer(this.components);
+            this.juliaNascimentoCoelhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mirellaDeSouzaCostaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -96,8 +96,6 @@
             this.comBotõesToolStripMenuItem,
             this.comRadioButtonsToolStripMenuItem,
             this.visorUnicoToolStripMenuItem1,
-            this.novaCalcOneVisioToolStripMenuItem,
-            this.calculadora00ToolStripMenuItem,
             this.toolStripMenuItem1,
             this.sairToolStripMenuItem});
             this.calculosToolStripMenuItem.Name = "calculosToolStripMenuItem";
@@ -127,18 +125,6 @@
             this.visorUnicoToolStripMenuItem1.Text = "Visor unico";
             this.visorUnicoToolStripMenuItem1.Click += new System.EventHandler(this.visorUnicoToolStripMenuItem1_Click);
             // 
-            // novaCalcOneVisioToolStripMenuItem
-            // 
-            this.novaCalcOneVisioToolStripMenuItem.Name = "novaCalcOneVisioToolStripMenuItem";
-            this.novaCalcOneVisioToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
-            this.novaCalcOneVisioToolStripMenuItem.Text = "Nova Calc One Visio";
-            // 
-            // calculadora00ToolStripMenuItem
-            // 
-            this.calculadora00ToolStripMenuItem.Name = "calculadora00ToolStripMenuItem";
-            this.calculadora00ToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
-            this.calculadora00ToolStripMenuItem.Text = "Calculadora 00";
-            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -164,21 +150,21 @@
             // cascatasToolStripMenuItem
             // 
             this.cascatasToolStripMenuItem.Name = "cascatasToolStripMenuItem";
-            this.cascatasToolStripMenuItem.Size = new System.Drawing.Size(246, 34);
+            this.cascatasToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.cascatasToolStripMenuItem.Text = "Cascatas";
             this.cascatasToolStripMenuItem.Click += new System.EventHandler(this.cascatasToolStripMenuItem_Click);
             // 
             // horizontalmenteToolStripMenuItem
             // 
             this.horizontalmenteToolStripMenuItem.Name = "horizontalmenteToolStripMenuItem";
-            this.horizontalmenteToolStripMenuItem.Size = new System.Drawing.Size(246, 34);
+            this.horizontalmenteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.horizontalmenteToolStripMenuItem.Text = "Horizontalmente";
             this.horizontalmenteToolStripMenuItem.Click += new System.EventHandler(this.horizontalmenteToolStripMenuItem_Click);
             // 
             // vErticalmenteToolStripMenuItem
             // 
             this.vErticalmenteToolStripMenuItem.Name = "vErticalmenteToolStripMenuItem";
-            this.vErticalmenteToolStripMenuItem.Size = new System.Drawing.Size(246, 34);
+            this.vErticalmenteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.vErticalmenteToolStripMenuItem.Text = "VErticalmente";
             this.vErticalmenteToolStripMenuItem.Click += new System.EventHandler(this.vErticalmenteToolStripMenuItem_Click);
             // 
@@ -194,14 +180,17 @@
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(250, 34);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(272, 34);
             this.sobreToolStripMenuItem.Text = "Sobre";
             // 
             // desenvolvedoresToolStripMenuItem
             // 
+            this.desenvolvedoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.juliaNascimentoCoelhoToolStripMenuItem,
+            this.mirellaDeSouzaCostaToolStripMenuItem});
             this.desenvolvedoresToolStripMenuItem.Name = "desenvolvedoresToolStripMenuItem";
-            this.desenvolvedoresToolStripMenuItem.Size = new System.Drawing.Size(250, 34);
-            this.desenvolvedoresToolStripMenuItem.Text = "Desenvolvedores";
+            this.desenvolvedoresToolStripMenuItem.Size = new System.Drawing.Size(272, 34);
+            this.desenvolvedoresToolStripMenuItem.Text = "Desenvolvedoras =)";
             // 
             // toolStrip1
             // 
@@ -420,6 +409,18 @@
             this.staHora.Interval = 1000;
             this.staHora.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // juliaNascimentoCoelhoToolStripMenuItem
+            // 
+            this.juliaNascimentoCoelhoToolStripMenuItem.Name = "juliaNascimentoCoelhoToolStripMenuItem";
+            this.juliaNascimentoCoelhoToolStripMenuItem.Size = new System.Drawing.Size(307, 34);
+            this.juliaNascimentoCoelhoToolStripMenuItem.Text = "Julia Nascimento Coelho";
+            // 
+            // mirellaDeSouzaCostaToolStripMenuItem
+            // 
+            this.mirellaDeSouzaCostaToolStripMenuItem.Name = "mirellaDeSouzaCostaToolStripMenuItem";
+            this.mirellaDeSouzaCostaToolStripMenuItem.Size = new System.Drawing.Size(307, 34);
+            this.mirellaDeSouzaCostaToolStripMenuItem.Text = "Mirella de Souza Costa";
+            // 
             // MDI_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -483,10 +484,10 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripMenuItem visorUnicoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem novaCalcOneVisioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calculadora00ToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel Mensagem;
         private System.Windows.Forms.Timer staHora;
         private System.Windows.Forms.ToolStripStatusLabel name;
+        private System.Windows.Forms.ToolStripMenuItem juliaNascimentoCoelhoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mirellaDeSouzaCostaToolStripMenuItem;
     }
 }

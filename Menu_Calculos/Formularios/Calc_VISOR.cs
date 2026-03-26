@@ -12,6 +12,12 @@ namespace Menu_Calculos
 {
     public partial class Calc_VISOR : Form
     {
+       
+        decimal vNumant;
+        string vOperaçao;  // variavel global, para armazenar a operação selecionada!!
+        bool vLimparVisor;
+        // as tres são variaveis
+
         public Calc_VISOR()
         {
             InitializeComponent();
@@ -23,9 +29,16 @@ namespace Menu_Calculos
             if (LblVisor.Text == "0")
             {
                 LblVisor.Text = "";
+                vLimparVisor = false;
             }
             LblVisor.Text += digito;
 
+        }
+        private void F_operaçoes(object sender, EventArgs e)
+        {
+            vNumant = decimal.Parse(LblVisor.Text);
+            vOperaçao = ((Button)sender).Text;
+            vLimparVisor = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,6 +85,7 @@ namespace Menu_Calculos
         {
             //pegar o numero atual do visor
             decimal v = decimal.Parse(s: LblVisor.Text);
+            decimal vNumant = v;
             //decidir que operação fazer   
         }
 
@@ -97,7 +111,30 @@ namespace Menu_Calculos
 
         private void button19_Click(object sender, EventArgs e)
         {
+            LblVisor.Text=LblVisor.Text.Substring(0, LblVisor.Text.Length -);
+            if(LblVisor.Text=="") LblVisor.Text = "0";
+        }
 
+        private void LblVisor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVirgula(object sender, EventArgs e)
+        {
+            if(!LblVisor.Text.Contains(","))
+            LblVisor.Text += ",";
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            vNumant = 0;
+            LblVisor.Text = "0";
         }
     }
 }
