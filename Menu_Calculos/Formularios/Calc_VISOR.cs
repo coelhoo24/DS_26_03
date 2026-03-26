@@ -17,7 +17,7 @@ namespace Menu_Calculos
             InitializeComponent();
         }
 
-        private void Digitos(object sender, EventArgs e)
+        private void F_Digitos(object sender, EventArgs e)
         {
             string digito = ((Button)sender). Text ;
             if (LblVisor.Text == "0")
@@ -70,7 +70,9 @@ namespace Menu_Calculos
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-
+            //pegar o numero atual do visor
+            decimal v = decimal.Parse(s: LblVisor.Text);
+            //decidir que operação fazer   
         }
 
         private void button5_Click_1(object sender, EventArgs e)
