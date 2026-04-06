@@ -180,5 +180,10 @@ namespace Menu_Calculos
         {
 
         }
+
+        private void CALCULOS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
