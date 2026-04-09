@@ -1,6 +1,6 @@
 ﻿namespace Menu_Calculos
 {
-    partial class CalcRadio
+    public partial class CalcRadio : Form
     {
         /// <summary>
         /// Required designer variable.
@@ -168,10 +168,8 @@
             this.button2.Text = "Fechar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // calcular
-            // 
-            this.calcular.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+            this.calcular.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.calcular.Location = new System.Drawing.Point(270, 523);
             this.calcular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.calcular.Name = "calcular";
@@ -241,8 +239,6 @@
             this.PerformLayout();
 
         }
-
-        #endregion
 
         private System.Windows.Forms.RadioButton soma;
         private System.Windows.Forms.RadioButton sub;
