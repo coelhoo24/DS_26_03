@@ -116,7 +116,16 @@ namespace Menu_Calculos
                 b = double.Parse(textBox2.Text);
 
                 sinal.Text = "/";
-                resultado.Text = (a / b).ToString();
+                if (b == 0)
+                {
+                    MessageBox.Show("Não é possível dividir por zero!");
+                }
+                else
+                {
+                    resultado.Text = (a / b).ToString();
+                }
+                    
+
             }
         }
 
